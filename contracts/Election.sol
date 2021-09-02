@@ -1,5 +1,5 @@
 pragma solidity 0.4.20;
-
+//we need a Store candidate,read candidate, and a constructor
 contract Election {
     // Model a Candidate
     struct Candidate {
@@ -20,7 +20,7 @@ contract Election {
     event votedEvent (
         uint indexed _candidateId
     );
-
+//This will act as a constructor
     function Election () public {
         addCandidate("Candidate 1");
         addCandidate("Candidate 2");
